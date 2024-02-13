@@ -5,16 +5,16 @@ public class Main {
         Singleton singleton = Singleton.getInstance();
         System.out.println("**************************************");
         Builder product = new Builder.AracBuilder()
-                .getModel("Clio")
-                .getRenk("Beyaz")
-                .getYil(2023)
-                .getKM(1000)
+                .setModel("Clio")
+                .setRenk("Beyaz")
+                .setYil(2023)
+                .setKM(1000)
                 .build();
         System.out.println("Builder Tasarım Örneği Çalıştı !" + "\n" + "Araç Bilgileri:");
-        System.out.print("Model: " + product.getModel() + " | ");
-        System.out.print("Renk: " + product.getRenk()+ " | ");
-        System.out.print("Yıl: " + product.getYil()+ " | ");
-        System.out.print("Km: " + product.getKm());
+        System.out.print("Model: " + product.setModel() + " | ");
+        System.out.print("Renk: " + product.setRenk()+ " | ");
+        System.out.print("Yıl: " + product.setYil()+ " | ");
+        System.out.print("Km: " + product.setKm());
 
     }
 }

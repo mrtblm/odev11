@@ -7,18 +7,18 @@ public class Builder {
     private int km;
 
 
-    public String getModel() {
+    public String setModel() {
         return model;
     }
 
-    public String getRenk() {
+    public String setRenk() {
         return renk;
     }
 
-    public int getYil(){
+    public int setYil(){
         return yil;
     }
-    public int getKm(){
+    public int setKm(){
         return km;
     }
     public static class AracBuilder {
@@ -28,22 +28,22 @@ public class Builder {
             arac = new Builder();
         }
 
-        public AracBuilder getModel(String model) {
+        public AracBuilder setModel(String model) {
             arac.model = model;
             return this;
         }
 
-        public AracBuilder getRenk(String renk) {
+        public AracBuilder setRenk(String renk) {
             arac.renk = renk;
             return this;
         }
 
-        public AracBuilder getYil(int yil){
+        public AracBuilder setYil(int yil){
             arac.yil=yil;
             return this;
         }
 
-        public AracBuilder getKM(int km){
+        public AracBuilder setKM(int km){
             arac.km=km;
             return this;
         }
